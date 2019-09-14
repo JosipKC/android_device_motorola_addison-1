@@ -18,6 +18,8 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
+#pragma push_macro("PROPERTY_VALUE_MAX")
+
 #include <cutils/properties.h>
 #include <string.h>
 
@@ -28,4 +30,6 @@
 #define BLE_VND_INCLUDED TRUE
 #define BT_CLEAN_TURN_ON_DISABLED TRUE
 #define BTM_SCO_ENHANCED_SYNC_ENABLED FALSE
+
+#pragma pop_macro("PROPERTY_VALUE_MAX")
 #endif
